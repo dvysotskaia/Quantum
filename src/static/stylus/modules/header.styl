@@ -1,0 +1,119 @@
+.header
+  background-color #fff
+  box-shadow 0 3px 10px rgba(0, 0, 0, 0.08)
+  margin-bottom: 30px
+  z-index 10
+
+.header-container
+  display flex
+  justify-content: space-between;
+  padding-left: 23px
+  padding-right: 41px
+  align-items center
+  padding-top: 30px
+  padding-bottom: 38px
+
+//.header__logo
+//  color #4d4d4d
+//  font-size 22px
+//  font-weight 900
+//  line-height 1
+//  text-transform uppercase
+//  letter-spacing 1.76px
+
+.header__search
+  width 478px
+  height 50px
+  border-radius 4px
+  border 2px solid #f5f5f5
+  display flex
+  //align-items center
+
+.header__search-input-wrapper
+  width: 278px
+  display flex
+  //align-items center
+  border-right 2px solid #f5f5f5
+
+.header__search-input
+  width: 100%
+  padding-right: 20px
+  padding-left: 20px
+  color #3b59b3
+  font-family Roboto
+  font-size 14px
+  font-weight 500
+  line-height 2.14
+  border none
+  outline none
+
+  &::placeholder
+    color #b3b3b3
+
+.header__search-dropdown
+  display flex
+  justify-content: center
+  align-items center
+  width: 142px
+  border-right 2px solid #f5f5f5
+
+.header__search-button-wrapper
+  flex-grow 1
+  .icon
+    size(13px)
+    fill #808080
+
+.header__search-button
+  background-color transparent
+  border none
+  display flex
+  justify-content: center;
+  align-items center
+  cursor pointer
+  width: 100%
+  height: 100%
+
+.header__links
+  display flex
+  justify-content: space-between;
+  align-items center
+
+.header-link
+  display flex
+  justify-content: space-between;
+  align-items center
+  &:not(:last-child)
+    margin-right: 35px
+  transition ease-in .4s
+  &:hover
+    .header-link_text
+      color accentColor
+    .icon
+      fill accentColor
+
+.header-link_icon
+  margin-right: 13px
+  position relative
+  .icon
+    size(21px,20px)
+    fill #808080
+    transition ease-in .4s
+
+.header-link--notify
+  .header-link_icon
+    &:after
+      content ""
+      absolute($top:-8px,$right:-7px)
+      width 6px
+      height 6px
+      background-color accentColor
+      border-radius 50%
+
+
+.header-link_text
+  color #808080
+  font-size 14px
+  font-weight 500
+  line-height 2.14
+  transition ease-in .4s
+

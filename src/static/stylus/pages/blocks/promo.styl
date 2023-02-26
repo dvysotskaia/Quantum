@@ -1,0 +1,82 @@
+.promo-section
+  display flex
+  justify-content space-between
+
+.promo-block
+  &:not(:last-child)
+   margin-right: 30px
+
+.promo-block__item
+  height: 330px
+  display flex
+  flex-direction column
+  align-items center
+  text-align center
+  padding-bottom: 45px
+  padding-top: 45px
+  padding-right: 82px
+  padding-left: 82px
+  //box-shadow 0 3px 10px rgba(0, 0, 0, 0.08)
+  //border-radius 6px
+  transition box-shadow ease-in .4s
+  //
+  &:hover
+    transform translateY(-5px)
+    box-shadow 0 3px 25px rgba(0, 0, 0, 0.219)
+
+.promo-block__item--bg-image
+  justify-content flex-end
+  background-position center
+  background-size cover
+  padding-bottom: 47px
+
+  .promo-block__title
+    color #ffffff
+    line-height 1.5
+
+  .promo-block__text
+    margin-bottom: 0
+    color #ffffff
+    opacity 0.3
+
+
+.promo-block__item--bg-image-watch
+  background-image url("../img/content/promo/watch-bg.jpg")
+
+.promo-block__title
+  color #666666
+  font-size 20px
+  font-weight 500
+  line-height 1
+  margin-bottom: 24px
+
+.promo-block__text
+  color #b3b3b3
+  font-size 14px
+  font-weight 500
+  line-height 1
+  margin-bottom: 18px
+
+.promo-block__item--small
+  display flex
+  flex-direction row
+  height: 150px
+  padding: 20px
+  text-align left
+  align-items center
+  &:not(:last-child)
+    margin-bottom: 30px
+
+.promo-block__item-img
+  flex-shrink 0
+  width: 116px
+  margin-right: 25px
+  display flex
+  align-items center
+  justify-content: center;
+
+.promo-block__item-text
+  color #666666
+  font-size 14px
+  font-weight 500
+  line-height 2.14

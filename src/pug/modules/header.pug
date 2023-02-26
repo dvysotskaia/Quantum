@@ -1,0 +1,36 @@
+header.header
+    .container.header-container
+        .header__logo
+            .logo QUANTUM
+        form.header__search(type="GET")
+            .header__search-input-wrapper
+                input.header__search-input(type="text" placeholder="Search goods")
+            .header__search-dropdown
+                .header-select(data-select)
+                    .header-select__title(data-select-title) CATEGORY
+                    .header-select__dropdown.hidden
+                        .header-select__dropdown-item(data-select-item="Mobile") Mobile
+                        .header-select__dropdown-item(data-select-item="Tablet") Tablet
+                        .header-select__dropdown-item(data-select-item="Laptop") Laptop
+                select.hidden(id="selectReal" name="select" value="none")
+                    option(value="none") CATEGORY
+                    option(value="Mobile") Mobile
+                    option(value="Tablet") Tablet
+                    option(value="Laptop") Laptop
+            .header__search-button-wrapper
+                button.header__search-button(type="submit")
+                    +icon("search_icon")
+        .header__links
+            a(href="#").header-link.header-link--notify
+                span.header-link_icon
+                    +icon("cart")
+                span.header-link_text 2 Items
+            a(href="#").header-link
+                span.header-link_icon
+                    +icon("wishlist")
+                span.header-link_text Wish List
+            a(href="#").header-link
+                span.header-link_icon
+                    +icon("user")
+                span.header-link_text Sing in
+    include navigation

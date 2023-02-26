@@ -1,0 +1,103 @@
+.cards-wrapper
+  display flex
+  justify-content: flex-start
+  flex-wrap wrap
+  & > *
+    margin-bottom: 30px
+  & > *:not(:nth-child(3n))
+    margin-right: 28px
+
+.card
+  @extend .mixin-card
+  padding: 20px
+  width: 31%
+  text-align center
+  cursor pointer
+  transition ease-in .4s
+  //margin-bottom: 30px
+  &:hover
+    box-shadow 0 3px 25px rgba(0, 0, 0, 0.219)
+
+.card-header
+  display flex
+  justify-content space-between
+  align-items center
+  margin-bottom: 24px
+
+.card-header_sale
+  background-color #f7f7f7
+  padding: 7px 10px
+  color #b3b3b3
+  font-weight 700
+  font-size 10px
+  text-transform uppercase
+
+
+.card-icon
+  background transparent
+  border none
+  outline none
+  transition ease-in .4s
+  cursor pointer
+  .icon
+    size(20px,19px)
+    &:hover
+      fill accentColor
+
+.card__img
+  margin-bottom: 34px
+
+.card__title
+  color #666666
+  font-size 14px
+  font-weight 500
+  line-height 1.43
+  margin-bottom: 25px
+
+.card__rating
+  display flex
+  justify-content: center
+  align-items center
+  margin-bottom: 29px
+
+.card__rating-star
+  & +&
+    margin-left: 4px
+  .icon
+    size(20px,19px)
+    fill #f9a72d
+
+.card__rating-star--empty
+  .icon
+    fill #e7e5e5
+
+.card__rating-value
+  color #b3b3b3
+  font-size 12px
+  font-weight 500
+  line-height 1
+  letter-spacing 0.12px
+  margin-left: 16px
+  margin-top: 5px
+
+.card__price
+  display flex
+  justify-content: center
+
+.card__price-price
+  color #666666
+  font-size 16px
+  font-weight 600
+  line-height 1.25
+  letter-spacing 0.16px
+  margin-right: 17px
+
+.card__price-icon
+  transition ease-in .4s
+  .icon
+    size(20px)
+    fill #e6e4e4
+    &:hover
+      fill accentColor
+
+

@@ -1,0 +1,66 @@
+.header-nav-wrapper
+  border-top $border
+
+.header-nav
+  border-right $border
+  border-left $border
+  display flex
+
+.header-nav__categories
+  border-right $border
+
+.header-mega-menu-link
+  display flex
+  justify-content: space-between;
+  align-items center
+  padding-bottom: 23px
+  padding-top: 23px
+  padding-right: 40px
+  padding-left: 30px
+  &:hover
+    .header-mega-menu-link__text
+      color accentColor
+    .icon
+      fill accentColor
+
+.header-mega-menu-link__icon
+  margin-right: 22px
+  .icon
+    size(18px,12px)
+    fill #808080
+    transition ease-in .4s
+
+.header-mega-menu-link__text
+  color #808080
+  font-size 14px
+  font-weight 500
+  line-height 2.14
+  transition ease-in .4s
+
+.header-nav__deals
+  border-right $border
+  display flex
+  align-items center
+  padding-left: 38px
+  padding-right: 94px
+
+.header-nav__deals__link
+  color #808080
+  font-size 14px
+  font-weight 500
+  //line-height 2.14
+  &:not(:last-child)
+    margin-right: 35px
+  transition ease-in .4s
+  &:hover
+    color accentColor
+
+.header-nav__select
+  display flex
+
+.header-nav__select-item
+  width: auto
+  &:not(:last-child)
+    border-right $border
+
+
